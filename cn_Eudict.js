@@ -1,5 +1,5 @@
 class cn_Eudict {
-  async displayName() {
+  displayName() {
     return '自定义法语助手';
   }
 
@@ -13,5 +13,3 @@ class cn_Eudict {
     }];
   }
 }
-
-window.cn_Eudict = cn_Eudict;
