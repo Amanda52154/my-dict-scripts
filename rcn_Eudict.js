@@ -3,7 +3,12 @@ class rcn_Eudict {
     this.options = options;
     this.maxexample = options.maxexample || 2;
   }
-
+async displayName() {
+    let locale = await api.locale();
+    if (locale.indexOf('CN') != -1) return '自定义法语助手';
+    if (locale.indexOf('TW') != -1) return '自定义法语助手';
+    return 'Eudict FR1->CN Dictionary';
+}
   // 获取节点文本
   T(node) {
     return node ? node.innerText.trim() : '';
