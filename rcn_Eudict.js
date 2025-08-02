@@ -132,5 +132,6 @@ async displayName() {
 }
 
 // 将类挂载到window供插件识别（如果插件需要）
-window.DictionaryClass = rcn_Eudict;
+window.rcn_Eudict = rcn_Eudict;
+
 
